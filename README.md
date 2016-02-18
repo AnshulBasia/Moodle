@@ -6,7 +6,7 @@ This app has following features :
  
 After Login the user is able to : 
  
-○	View the list of courses that a student is registered for( or the list of courses the faculty is taking) 
+	○	View the list of courses that a student is registered for( or the list of courses the faculty is taking) 
 	○	View all notifications (related to threads) 
 	○	View grades for all courses 
 	○	View Information of a particular Assignment  
