@@ -1,6 +1,5 @@
 package com.example.shobhit.ass1;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,12 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class assignments_of_a_course extends AppCompatActivity {
+public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_assignments_of_a_course);
+        setContentView(R.layout.activity_login);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -25,11 +24,6 @@ public class assignments_of_a_course extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-    }
-
-    void get_assignment(View v){
-        Intent intent=new Intent(this,assignment.class);
-        startActivity(intent);
     }
 
 }

@@ -28,16 +28,16 @@ public class particular_assignment extends AppCompatActivity {
             }
         });
     }
-    public void get_assignment(){
+    public void get_assignment(View v){
         Intent intent = new Intent(this, assignment.class);
         startActivity(intent);
 
     }
-    public void get_registered(){
+    public void get_registered(View v){
         Intent intent=new Intent(this, registered.class);
         startActivity(intent);
     }
-    public void get_course(){
+    public void get_course(View v){
         Intent intent =new Intent(this, details_of_course.class);
         startActivity(intent);
     }

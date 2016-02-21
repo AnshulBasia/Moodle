@@ -51,6 +51,10 @@
         <activity
             android:name=".registered"
             android:label="@string/title_activity_registered"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 

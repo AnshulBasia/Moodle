@@ -56,7 +56,7 @@ public class Courses extends AppCompatActivity {
 
         }
     }
-        void details(){
+        void details(View v){
         Intent intent =new Intent(this,details_of_course.class);
             startActivity(intent);
     }
