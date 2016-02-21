@@ -11,16 +11,15 @@
     android:background="@drawable/background"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.shobhit.login.Help"
-    tools:showIn="@layout/activity_help">
+    tools:showIn="@layout/activity_details_of_course">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="DETAILS:
-        "
+        android:text="DETAILS:"
         android:textSize="35dp"
-        android:textColor="#FFFFFF"
+        android:textColor="#83CECE"
         android:textStyle="bold"
         android:id="@+id/textView1"
         android:layout_alignParentTop="true"
@@ -41,7 +40,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
+        android:textColor="#CFDEDE"
 
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Code:     "

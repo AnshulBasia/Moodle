@@ -35,6 +35,22 @@
         <activity
             android:name=".grades_breakup"
             android:label="@string/title_activity_grades_breakup"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".assignments_of_a_course"
+            android:label="@string/title_activity_assignments_of_a_course"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".particular_assignment"
+            android:label="@string/title_activity_particular_assignment"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".assignment"
+            android:label="@string/title_activity_assignment"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".registered"
+            android:label="@string/title_activity_registered"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 

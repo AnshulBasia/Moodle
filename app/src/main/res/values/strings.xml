@@ -98,4 +98,8 @@
     <string name="title_activity_grades">grades</string>
     <string name="title_activity_grade">grade</string>
     <string name="title_activity_grades_breakup">grades_breakup</string>
+    <string name="title_activity_assignments_of_a_course">assignments_of_a_course</string>
+    <string name="title_activity_particular_assignment">particular_assignment</string>
+    <string name="title_activity_assignment">assignment</string>
+    <string name="title_activity_registered">registered</string>
 </resources>
