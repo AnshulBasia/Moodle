@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.shobhit.ass1.assignment"
-    android:background="@drawable/background"
+
     tools:showIn="@layout/activity_assignment">
 
     <ScrollView
@@ -27,10 +27,12 @@
             android:textSize="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name  " />
+            android:textColor="#000000"
+            android:text="Name - " />
         <TextView
             android:id="@+id/textView2"
             android:textSize="30dp"
+            android:textColor="#000000"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Course  " />
@@ -44,14 +46,16 @@
         <TextView
             android:id="@+id/textView3"
             android:textSize="30dp"
+            android:textColor="#000000"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="File       " />
+            android:text="File  -     " />
         <TextView
             android:id="@+id/textView4"
             android:textSize="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
             android:text="Course  " />
     </TableRow>
     <TableRow
@@ -64,11 +68,13 @@
             android:id="@+id/textView5"
             android:textSize="30dp"
             android:layout_width="wrap_content"
+            android:textColor="#000000"
             android:layout_height="wrap_content"
             android:text="Created At-  " />
         <TextView
             android:id="@+id/textView6"
             android:textSize="30dp"
+            android:textColor="#000000"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Course  " />
@@ -84,10 +90,12 @@
             android:textSize="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
             android:text="Registered Course Id-  " />
         <TextView
             android:id="@+id/textView8"
             android:textSize="30dp"
+            android:textColor="#000000"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="C  " />
@@ -100,6 +108,7 @@
         android:background="#FFFFFF">
         <TextView
             android:id="@+id/textView9"
+            android:textColor="#000000"
             android:textSize="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -109,6 +118,7 @@
             android:textSize="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
             android:text="C  " />
     </TableRow>
     <TableRow
@@ -120,6 +130,7 @@
         <TextView
             android:id="@+id/textView11"
             android:textSize="30dp"
+            android:textColor="#000000"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Type-  " />
@@ -128,6 +139,7 @@
             android:textSize="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
             android:text="C  " />
     </TableRow>
     <TableRow
@@ -141,12 +153,14 @@
             android:textSize="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
             android:text="DeadLine-  " />
         <TextView
             android:id="@+id/textView14"
             android:textSize="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
             android:text="C  " />
     </TableRow>
     <TableRow
@@ -160,12 +174,14 @@
             android:textSize="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
             android:text="ID-  " />
         <TextView
             android:id="@+id/textView16"
             android:textSize="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
             android:text="C  " />
     </TableRow>
     <TableRow
@@ -177,6 +193,7 @@
         <TextView
             android:id="@+id/textView17"
             android:textSize="30dp"
+            android:textColor="#000000"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Description-  " />
@@ -185,6 +202,7 @@
             android:textSize="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
             android:text="C  " />
     </TableRow>
 

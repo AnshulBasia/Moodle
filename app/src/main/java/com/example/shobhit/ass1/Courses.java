@@ -1,5 +1,7 @@
 package com.example.shobhit.ass1;
 
+import android.app.Activity;
+import android.app.ListActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -9,7 +11,10 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,7 +31,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class Courses extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
 
     public final String IP_ADDRESS="http://10.192.45.86:8000";
     public final String API_COURSES=IP_ADDRESS+"/courses/list.json";
@@ -54,35 +59,11 @@ public class Courses extends AppCompatActivity {
             }
         });
         get_courses();
-        get_courses_data();
+
 
     }
     course subject[];
-    public void get_courses_data() {
-        //use localhost:8000​/default/login.json?userid=username&password=password to login and then
-        // ​use localhost:8000/courses/list.json and parse it's response to save the
-        // no. of courses, smeseter number and name of courses along with code,description, ltp, credits , id
-       //no. of courses
-        int semester_no; //semester number in which user is enrolled in
-        String code[] = new String[no_of_courses];
 
-
-        Button button[] = new Button[no_of_courses];
-        button[0] = (Button) findViewById(R.id.button1);
-        button[1] = (Button) findViewById(R.id.button2);
-        button[2] = (Button) findViewById(R.id.button3);
-        button[3] = (Button) findViewById(R.id.button4);
-        button[4] = (Button) findViewById(R.id.button5);
-        for (int i = 0; i < no_of_courses; i++) {
-            //get these parameters after parsing the Json response ad initialize them
-            code[i]=course_codes.get(i)+";"+course_names.get(i);
-            button[i].setText(code[i]);
-        }
-        for(int i=no_of_courses;i<=5;i++){              //TODO to get the no. of courses
-            View b=
-        }
-
-    }//
     public void get_courses(){
         requestQueue = Volley.newRequestQueue(this);
         StringRequest stringRequest = new StringRequest(Request.Method.GET,API_COURSES,
@@ -117,6 +98,19 @@ public class Courses extends AppCompatActivity {
                 //TODO change mainactivity to whatever activity
                 //System.out.println("HURRAY");
             }
+            //String[] test={"d","r","g"};
+            String[] list=new String[courses.length()];
+            for(int i=0;i<courses.length();i++){
+                list[i]=course_names.get(i)+"  ->  "+course_codes.get(i);
+            }
+
+            //Creating a list view to add the buttons ---AN ATTEMPT
+            ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                    android.R.layout.simple_list_item_1, list);
+            ListView listView = (ListView) findViewById(R.id.listView);
+            listView.setAdapter(adapter);
+            listView.setOnItemClickListener(this);
+
 
         }
         catch (org.json.JSONException e) {
@@ -124,11 +118,15 @@ public class Courses extends AppCompatActivity {
         }
 
     }
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        TextView temp=(TextView)view;
+        Intent intent=new Intent(this,details_of_course.class);
+        startActivity(intent);
 
-
-    void details(View v){
-        Intent intent =new Intent(this,details_of_course.class);
-            startActivity(intent);
     }
+
+
+
 
 }

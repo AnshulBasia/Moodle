@@ -12,6 +12,9 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.shobhit.login.Help"
     tools:showIn="@layout/activity_courses">
+    <ScrollView
+        android:layout_width=""
+        android:layout_height="">
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,15 +32,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button1"
-        android:layout_below="@+id/textView7"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="details"/>
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -51,45 +46,14 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <Button
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button1"
+        android:id="@+id/listView"
+        android:layout_below="@+id/textView7"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="details"/>
+        android:layout_alignParentStart="true" />
+    </ScrollView>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="details"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button4"
-        android:layout_below="@+id/button3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="details"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button5"
-        android:layout_below="@+id/button4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="details"
-        />
 
 </RelativeLayout>

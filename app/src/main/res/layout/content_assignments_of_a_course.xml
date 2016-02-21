@@ -20,7 +20,7 @@
         android:id="@+id/tableRow1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF">
+        >
         <TextView
             android:id="@+id/textView1"
             android:textSize="30dp"
@@ -34,55 +34,13 @@
             android:layout_height="wrap_content"
             android:text="Course  " />
     </TableRow>
-    <TableRow
-        android:id="@+id/tableRow2"
+
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/listView2"
         android:layout_below="@+id/tableRow1"
-        android:background="#FFFF">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ASSIGNMENT 1"
-            android:id="@+id/button1"
-            android:layout_below="@+id/textView7"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:onClick="get_assignment"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-
-    </TableRow>
-    <TableRow
-        android:id="@+id/tableRow3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tableRow2"
-        android:background="#FFFFFF">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ASSIGNMENT 2"
-            android:id="@+id/button2"
-            android:layout_below="@+id/textView7"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:onClick="get_assignment"/>
-
-    </TableRow>
-    <TableRow
-        android:id="@+id/tableRow4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tableRow3"
-        android:background="#FFFFFF">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ASSIGNMENT 3"
-            android:id="@+id/button3"
-            android:layout_below="@+id/textView7"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:onClick="get_assignment"/>
-    </TableRow>
 </RelativeLayout>

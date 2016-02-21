@@ -7,8 +7,12 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
 
-public class assignments_of_a_course extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +29,37 @@ public class assignments_of_a_course extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        //get_assignments();  // A Function to parse the details of assinments from server API of all the assignments
     }
 
-    void get_assignment(View v){
-        Intent intent=new Intent(this,assignment.class);
+    void get_assignments{
+
+    }
+    public void response_assignments{
+        try{
+             TextView t;
+            String course_name;
+            t=(TextView)findViewById(R.id.textView2);
+            t.setText(course_name);
+            String[] list=new String[no_of_assignments];
+            for(int i=0;i<no_of_assignments;i++){
+                list[i]="ASSIGNMENT "+Integer.toString(i);
+            }
+            ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                    android.R.layout.simple_list_item_1, list);
+            ListView listView = (ListView) findViewById(R.id.listView);
+            listView.setAdapter(adapter);
+            listView.setOnItemClickListener(this);
+
+        }
+        catch{
+
+        }
+    }
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        TextView temp=(TextView)view;
+        Intent intent=new Intent(this,details_of_course.class);
         startActivity(intent);
-    }
 
-}
+
+    }
