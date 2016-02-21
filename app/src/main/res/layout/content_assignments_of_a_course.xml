@@ -20,7 +20,7 @@
         android:id="@+id/tableRow1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFFFF">
+        android:background="#FFFFFF">
         <TextView
             android:id="@+id/textView1"
             android:textSize="30dp"
@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tableRow1"
-        android:background="#FFFFF">
+        android:background="#FFFF">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tableRow2"
-        android:background="#FFFFF">
+        android:background="#FFFFFF">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tableRow3"
-        android:background="#FFFFF">
+        android:background="#FFFFFF">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

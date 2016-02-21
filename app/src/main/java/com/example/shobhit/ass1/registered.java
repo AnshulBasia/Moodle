@@ -26,7 +26,7 @@ public class registered extends AppCompatActivity {
             }
         });
     }
-    void get_registered{
+    void get_registered(){
         String starting_date,id,professor,semester,ending_date,year,course_id;
         TextView Name;
         Name = (TextView) findViewById(R.id.textView2);

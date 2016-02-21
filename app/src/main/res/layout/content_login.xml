@@ -47,19 +47,9 @@
                 android:layout_alignEnd="@+id/editText2" />
 
 
-        </LinearLayout>
-    </ScrollView>
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="134dp"
-        android:layout_height="wrap_content"
-        android:text="Log In"
-        android:id="@+id/button6"
-        android:layout_gravity="center_horizontal"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="login"/>
+
+
 
     <EditText
         android:layout_width="wrap_content"
@@ -70,8 +60,8 @@
         android:layout_gravity="center_horizontal"
         android:background="#ffffff"
         android:textColor="#000000"
-        android:id="@+id/editText"
-        android:layout_above="@+id/button6"
+        android:id="@+id/username"
+
         android:layout_centerHorizontal="true" />
 
     <EditText
@@ -82,11 +72,25 @@
         android:ems="10"
         android:background="#ffffff"
         android:textColor="#000000"
-        android:id="@+id/editText2"
+        android:id="@+id/password"
 
         android:layout_gravity="center_horizontal"
-        android:layout_above="@+id/editText"
+        android:layout_above="@+id/username"
         android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/button7"
+                android:onClick="login"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="120dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
 
 
 </RelativeLayout>

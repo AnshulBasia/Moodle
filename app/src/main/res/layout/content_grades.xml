@@ -57,7 +57,7 @@
         android:id="@+id/tableRow2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFFFF">
+        android:background="#FFFFFF">
         <TextView
             android:id="@+id/textView6"
             android:textSize="10dp"
@@ -94,7 +94,7 @@
         android:id="@+id/tableRow3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFFFF">
+        android:background="#FFFFFF">
         <TextView
             android:id="@+id/textView11"
             android:textSize="10dp"
@@ -131,7 +131,7 @@
         android:id="@+id/tableRow4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFFFF">
+        android:background="#FFFFFF">
         <TextView
             android:id="@+id/textView16"
             android:textSize="10dp"
@@ -168,7 +168,7 @@
         android:id="@+id/tableRow5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFFFF">
+        android:background="#FFFFFF">
         <TextView
             android:id="@+id/textView21"
             android:textSize="10dp"

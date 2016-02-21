@@ -59,7 +59,7 @@
         android:id="@+id/tableRow2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFFFF">
+        android:background="#FFFFFF">
 
         <TextView
             android:id="@+id/textView7"
@@ -91,7 +91,7 @@
         android:id="@+id/tableRow3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFFFF">
+        android:background="#FFFFFF">
 
         <TextView
             android:id="@+id/textView12"
@@ -123,7 +123,7 @@
         android:id="@+id/tableRow4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFFFF">
+        android:background="#FFFFFF">
 
         <TextView
             android:id="@+id/textView17"
@@ -155,7 +155,7 @@
         android:id="@+id/tableRow5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFFFF">
+        android:background="#FFFFFF">
 
         <TextView
             android:id="@+id/textView22"
