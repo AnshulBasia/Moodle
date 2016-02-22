@@ -55,6 +55,14 @@
         <activity
             android:name=".Login"
             android:label="@string/title_activity_login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Comment"
+            android:label="@string/title_activity_comment"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".add_comment"
+            android:label="@string/title_activity_add_comment"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 
