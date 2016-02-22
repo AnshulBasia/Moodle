@@ -8,6 +8,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -19,12 +20,13 @@ import com.android.volley.toolbox.Volley;
 import java.util.Map;
 
 public class Login extends AppCompatActivity {
-
+    public EditText etname;
+    public EditText etpassword;
     public String username;
     public String password;
-    public final String IP_ADDRESS="http://10.192.45.86:8000";
-    public final String API_LOGIN =IP_ADDRESS+"/default/login.json?userid="+username+"&"+"password="+password;
-
+    public final String IP_ADDRESS = "http://10.192.45.86:8000";
+    public final static String IP_ADDRESS1 = "http://10.192.45.86:8000";
+    public final String API_LOGIN = IP_ADDRESS + "/default/login.json?userid=" + username + "&" + "password=" + password;
     private static final String SET_COOKIE_KEY = "Set-Cookie";
     private static final String COOKIE_KEY = "Cookie";
     private static final String SESSION_COOKIE = "session_id_moodleplus";
@@ -40,12 +42,15 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        _instance=this;
+        _instance = this;
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        etname = (EditText) findViewById(R.id.username);
+        username = etname.getText().toString();
+        etpassword = (EditText) findViewById(R.id.password);
+        password = etpassword.getText().toString();
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,8 +79,10 @@ public class Login extends AppCompatActivity {
             }
         }
     }
+
     /**
      * Adds session cookie to headers if exists.
+     *
      * @param headers
      */
     public final void addSessionCookie(Map<String, String> headers) {
@@ -96,9 +103,9 @@ public class Login extends AppCompatActivity {
         }
     }
 
-    public void login(View view){
+    public void login(View view) {
         requestQueue = Volley.newRequestQueue(this);
-        StringRequest stringRequest = new StringRequest(Request.Method.GET,API_LOGIN,
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, API_LOGIN,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -114,8 +121,9 @@ public class Login extends AppCompatActivity {
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
         requestQueue.add(stringRequest);
     }
-
-
-
-
+    public static String ipaddress()
+    {
+        return IP_ADDRESS1;
+    }
 }
+

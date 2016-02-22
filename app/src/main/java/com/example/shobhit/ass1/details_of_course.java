@@ -1,5 +1,6 @@
 package com.example.shobhit.ass1;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,7 +9,22 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
+import com.android.volley.RequestQueue;
+
+import java.util.ArrayList;
+
 public class details_of_course extends AppCompatActivity {
+
+    public String coursecode;
+    public final String IP_ADDRESS = Login.ipaddress();
+    public final String API_COURSES = IP_ADDRESS + "/courses/list.json";
+    public final String API_LIST_ASSIGNMENTS=IP_ADDRESS+"/courses/course.json/"+coursecode+"/assignments";
+
+    private static final String SET_COOKIE_KEY = "Set-Cookie";
+    private static final String COOKIE_KEY = "Cookie";
+    private static final String SESSION_COOKIE = "session_id_moodleplus";
+    private RequestQueue requestQueue;
+    private SharedPreferences preferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

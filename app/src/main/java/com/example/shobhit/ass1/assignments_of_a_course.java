@@ -32,18 +32,23 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         //get_assignments();  // A Function to parse the details of assinments from server API of all the assignments
     }
 
-    void get_assignments{
+    void get_assignments
+
+    {
 
     }
-    public void response_assignments{
-        try{
-             TextView t;
+
+    public void response_assignments
+
+    {
+        try {
+            TextView t;
             String course_name;
-            t=(TextView)findViewById(R.id.textView2);
+            t = (TextView) findViewById(R.id.textView2);
             t.setText(course_name);
-            String[] list=new String[no_of_assignments];
-            for(int i=0;i<no_of_assignments;i++){
-                list[i]="ASSIGNMENT "+Integer.toString(i);
+            String[] list = new String[no_of_assignments];
+            for (int i = 0; i < no_of_assignments; i++) {
+                list[i] = "ASSIGNMENT " + Integer.toString(i);
             }
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                     android.R.layout.simple_list_item_1, list);
@@ -51,15 +56,17 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             listView.setAdapter(adapter);
             listView.setOnItemClickListener(this);
 
-        }
-        catch{
+        } catch {
 
-        }
     }
+    }
+
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        TextView temp=(TextView)view;
-        Intent intent=new Intent(this,details_of_course.class);
+        TextView temp = (TextView) view;
+        Intent intent = new Intent(this, details_of_course.class);
         startActivity(intent);
 
 
     }
+
+}

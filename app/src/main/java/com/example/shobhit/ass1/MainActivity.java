@@ -39,7 +39,7 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    public final String IP_ADDRESS = "http://10.192.45.86:8000";
     public static final String JSON_URL ="http://10.192.45.86:8000/default/login.json?userid=cs1110200&password=john";
     public static final String JSON_COURSES="http://10.192.45.86:8000/courses/list.json";
     private static final String SET_COOKIE_KEY = "Set-Cookie";
